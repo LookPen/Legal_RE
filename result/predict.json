@@ -1,0 +1,51 @@
+{
+        "text": "脊髓型颈椎病的X线检查：侧位片上如椎管矢状径与椎体矢状径比值小于0.75，可认为有椎管狭窄。",
+        "spo_list_pred": [
+            {
+                "subject": "脊髓型颈椎病",
+                "predicate": "影像检查",
+                "object": "X线"
+            },
+            {
+                "subject": "X线",
+                "predicate": "显示",
+                "object": "椎管矢状径与椎体矢状径比值小于0.75"
+            },
+            {
+                "subject": "X线",
+                "predicate": "显示",
+                "object": "椎体矢状径比值小于0.75"
+            }
+        ],
+        "spo_list_gold": [
+            {
+                "subject": "X线",
+                "predicate": "显示",
+                "object": "椎管狭窄"
+            },
+            {
+                "subject": "脊髓型颈椎病",
+                "predicate": "影像检查",
+                "object": "X线"
+            }
+        ],
+        "spo_list_new": [
+            {
+                "subject": "X线",
+                "predicate": "显示",
+                "object": "椎管矢状径与椎体矢状径比值小于0.75"
+            },
+            {
+                "subject": "X线",
+                "predicate": "显示",
+                "object": "椎体矢状径比值小于0.75"
+            }
+        ],
+        "spo_list_lack": [
+            {
+                "subject": "X线",
+                "predicate": "显示",
+                "object": "椎管狭窄"
+            }
+        ]
+    }
