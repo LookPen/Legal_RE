@@ -61,7 +61,7 @@ class CasRel(nn.Module):
             nn.Dropout(0.1),
             nn.Linear(crf_hidden_size, num_ner_labels)
         )
-        self.sub_crf = CRF(num_tags=num_ner_labels)
+        self.sub_crf = CRF(num_tags=num_ner_labels, batch_first=True)
 
         self.obj_heads_classifier = nn.Linear(hidden_size, num_relations)
         self.obj_tails_classifier = nn.Linear(hidden_size, num_relations)
@@ -106,7 +106,7 @@ class CasRel(nn.Module):
             )
         sub_decode_seqs = None
         if not self.training:
-            seq_length = embed.size()
+            seq_length = embed.size(1)
             sub_decode_seqs = self.sub_crf.decode(emissions=emissions, mask=attention_mask.byte())
 
             for line in sub_decode_seqs:

@@ -135,6 +135,7 @@ class Trainer():
                         self.model.eval()
                         orders = ['subject', 'predicate', 'object']
                         correct_num, predicate_num, gold_num = 1e-10, 1e-10, 1e-10
+                        import os
                         f = open(os.path.join(self.args.result_dir, 'CMeIE_dev.json'), 'w')
                         for example in tqdm(eval_examples, desc='Evaluating'):
                             text = example.text_a
@@ -200,6 +201,7 @@ class Trainer():
 
         orders = ['subject', 'predicate', 'object']
         correct_num, predicate_num, gold_num = 1e-10, 1e-10, 1e-10
+        import os
         f = open(os.path.join(self.args.result_dir, 'CMeIE_dev.json'), 'w')
         for example in tqdm(eval_examples, desc='Evaluating'):
             text = example.text_a

@@ -113,7 +113,7 @@ if __name__ == '__main__':
 
     parser.add_argument("--data_dir", default='./law_re', type=str)
     # parser.add_argument("--dataset", default='xx', type=str)
-    parser.add_argument("--bert_path", default='/Users/macheng/PTM/bert_tiny_chinese', type=str)
+    parser.add_argument("--bert_path", default=r"D:\Code\huggingface\roberta-wwm-ext", type=str)
     parser.add_argument("--output_dir", default='./output/', type=str)
     parser.add_argument("--result_dir", default='./result/', type=str)
 
@@ -135,13 +135,13 @@ if __name__ == '__main__':
     parser.add_argument("--warmup_proportion", default=0.1, type=float)
     parser.add_argument('--weight_decay', default=0.005, type=float)
     parser.add_argument('--adam_eps', default=1e-8, type=float)
-    parser.add_argument('--attack_train', default='pgd', type=str, choices=['', 'fgm', 'pgd'])
+    parser.add_argument('--attack_train', default='', type=str, choices=['', 'fgm', 'pgd'])
     parser.add_argument("--scheduler", default='', type=str, choices=['', 'linear', 'cyc'])
 
     parser.add_argument('--seed', default=111, type=int)
     parser.add_argument('--h_bar', default=0.6, type=float)
     parser.add_argument('--t_bar', default=0.5, type=float)
-    parser.add_argument("--train_max_seq_length", default=180, type=int)
+    parser.add_argument("--train_max_seq_length", default=256, type=int)
     parser.add_argument("--test_max_seq_length", default=512, type=int)
     parser.add_argument('--patience', default=7, type=int)
 
@@ -165,8 +165,11 @@ if __name__ == '__main__':
         suffix += f'_{args.scheduler}'
 
     args.output_dir = os.path.join(args.output_dir, suffix)
+    if not os.path.exists(args.output_dir):
+        os.makedirs(args.output_dir)
 
     if args.mode == 'stack':
         stack()
     else:
         train()
+
