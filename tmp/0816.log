@@ -1,0 +1,41 @@
+ lr :  2e-05
+current F1 score: 0.000,  best F1 score: 0.000
+lr :  2e-05
+current F1 score: 0.000,  best F1 score: 0.000
+lr :  2e-05
+current F1 score: 0.086,  best F1 score: 0.000
+lr :  2e-05
+current F1 score: 0.249,  best F1 score: 0.086
+lr :  2e-05
+current F1 score: 0.328,  best F1 score: 0.249
+lr :  2e-05
+current F1 score: 0.353,  best F1 score: 0.328
+lr :  2e-05
+current F1 score: 0.379,  best F1 score: 0.353
+lr :  2e-05
+current F1 score: 0.381,  best F1 score: 0.379
+lr :  2e-05
+current F1 score: 0.391,  best F1 score: 0.381
+lr :  2e-05
+current F1 score: 0.394,  best F1 score: 0.391
+lr :  2e-05
+current F1 score: 0.398,  best F1 score: 0.394
+lr :  2e-05
+current F1 score: 0.390,  best F1 score: 0.398
+lr :  2e-05
+current F1 score: 0.397,  best F1 score: 0.398
+lr :  2e-05
+current F1 score: 0.398,  best F1 score: 0.398
+lr :  2e-05
+current F1 score: 0.406,  best F1 score: 0.398
+lr :  2e-05
+current F1 score: 0.415,  best F1 score: 0.406
+lr :  2e-05
+current F1 score: 0.424,  best F1 score: 0.415
+lr :  2e-05
+current F1 score: 0.426,  best F1 score: 0.424
+lr :  2e-05
+current F1 score: 0.435,  best F1 score: 0.426
+lr :  2e-05
+current F1 score: 0.429,  best F1 score: 0.435
+0.67248908296948 0.32172701949865445 0.43523316057803835
