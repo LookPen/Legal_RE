@@ -1,41 +1,41 @@
- lr :  2e-05
-current F1 score: 0.000,  best F1 score: 0.000
 lr :  2e-05
 current F1 score: 0.000,  best F1 score: 0.000
 lr :  2e-05
-current F1 score: 0.086,  best F1 score: 0.000
+current F1 score: 0.000,  best F1 score: 0.000
 lr :  2e-05
-current F1 score: 0.249,  best F1 score: 0.086
+current F1 score: 0.059,  best F1 score: 0.000
 lr :  2e-05
-current F1 score: 0.328,  best F1 score: 0.249
+current F1 score: 0.276,  best F1 score: 0.059
 lr :  2e-05
-current F1 score: 0.353,  best F1 score: 0.328
+current F1 score: 0.360,  best F1 score: 0.276
 lr :  2e-05
-current F1 score: 0.379,  best F1 score: 0.353
+current F1 score: 0.404,  best F1 score: 0.360
 lr :  2e-05
-current F1 score: 0.381,  best F1 score: 0.379
+current F1 score: 0.428,  best F1 score: 0.404
 lr :  2e-05
-current F1 score: 0.391,  best F1 score: 0.381
+current F1 score: 0.439,  best F1 score: 0.428
 lr :  2e-05
-current F1 score: 0.394,  best F1 score: 0.391
+current F1 score: 0.452,  best F1 score: 0.439
 lr :  2e-05
-current F1 score: 0.398,  best F1 score: 0.394
+current F1 score: 0.468,  best F1 score: 0.452
 lr :  2e-05
-current F1 score: 0.390,  best F1 score: 0.398
+current F1 score: 0.475,  best F1 score: 0.468
 lr :  2e-05
-current F1 score: 0.397,  best F1 score: 0.398
+current F1 score: 0.473,  best F1 score: 0.475
 lr :  2e-05
-current F1 score: 0.398,  best F1 score: 0.398
+current F1 score: 0.473,  best F1 score: 0.475
 lr :  2e-05
-current F1 score: 0.406,  best F1 score: 0.398
+current F1 score: 0.472,  best F1 score: 0.475
 lr :  2e-05
-current F1 score: 0.415,  best F1 score: 0.406
+current F1 score: 0.479,  best F1 score: 0.475
 lr :  2e-05
-current F1 score: 0.424,  best F1 score: 0.415
+current F1 score: 0.485,  best F1 score: 0.479
 lr :  2e-05
-current F1 score: 0.426,  best F1 score: 0.424
+current F1 score: 0.488,  best F1 score: 0.485
 lr :  2e-05
-current F1 score: 0.435,  best F1 score: 0.426
+current F1 score: 0.490,  best F1 score: 0.488
 lr :  2e-05
-current F1 score: 0.429,  best F1 score: 0.435
-0.67248908296948 0.32172701949865445 0.43523316057803835
+current F1 score: 0.485,  best F1 score: 0.490
+lr :  2e-05
+current F1 score: 0.488,  best F1 score: 0.490
+0.716198125836718 0.37256267409475124 0.49015116807229736
