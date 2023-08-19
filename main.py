@@ -122,9 +122,9 @@ if __name__ == '__main__':
     parser.add_argument("--do_test", action='store_true', default=True)
     parser.add_argument("--do_lower_case", action='store_false', default=True)
 
-    parser.add_argument("--train_batch_size", default=2, type=int)
+    parser.add_argument("--train_batch_size", default=4, type=int)
     parser.add_argument("--eval_batch_size", default=2, type=int)
-    parser.add_argument("--num_train_epochs", default=20, type=float)
+    parser.add_argument("--num_train_epochs", default=40, type=float)
     parser.add_argument("--num_samples", default=1, type=int)
     parser.add_argument('--inner_code', default='mean', type=str, choices=['lstm', 'mean'])
     parser.add_argument('--mode', default='train', type=str, choices=['train', 'stack'])
@@ -135,7 +135,7 @@ if __name__ == '__main__':
     parser.add_argument("--warmup_proportion", default=0.1, type=float)
     parser.add_argument('--weight_decay', default=0.005, type=float)
     parser.add_argument('--adam_eps', default=1e-8, type=float)
-    parser.add_argument('--attack_train', default='', type=str, choices=['', 'fgm', 'pgd'])
+    parser.add_argument('--attack_train', default='pgd', type=str, choices=['', 'fgm', 'pgd'])
     parser.add_argument("--scheduler", default='', type=str, choices=['', 'linear', 'cyc'])
 
     parser.add_argument('--seed', default=111, type=int)
