@@ -9,6 +9,7 @@ from sklearn.model_selection import KFold
 from src.utils.attack_train import *
 from transformers import BertTokenizerFast
 
+# 0903 禁用多线程 tokenization
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 
@@ -22,7 +23,7 @@ logger = logging.getLogger(__name__)
 
 def train():
     processor = RelationProcessor()
-    pos2id = None
+    pos2id = None  # TODO 没使用
     relation2id, id2relation = processor.get_relation2id(args.data_dir)
     args.num_relations = len(relation2id)
 
@@ -58,7 +59,7 @@ def train():
         trainer.predicate(test_examples, tokenizer, id2relation)
 
 
-def stack():
+def stack():  # TODO 0903 ?
     processor = RelationProcessor()
     pos2id = None
     relation2id, id2relation = processor.get_relation2id(args.data_dir)
@@ -122,7 +123,7 @@ if __name__ == '__main__':
     parser.add_argument("--do_test", action='store_true', default=True)
     parser.add_argument("--do_lower_case", action='store_false', default=True)
 
-    parser.add_argument("--train_batch_size", default=4, type=int)
+    parser.add_argument("--train_batch_size", default=8, type=int)
     parser.add_argument("--eval_batch_size", default=2, type=int)
     parser.add_argument("--num_train_epochs", default=40, type=float)
     parser.add_argument("--num_samples", default=1, type=int)

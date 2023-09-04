@@ -111,7 +111,7 @@ def convert_examples_to_features(examples, pos2id, relation2id, max_seq_length, 
     features = []
     for (ex_index, example) in enumerate(examples):
         tokens_a = tokenizer.tokenize(example.text_a)
-        tokens_b = None
+        tokens_b = None  # 0903 用于两句话，这里只用了一句话，所以token_b 没啥用
 
         if len(tokens_a) > max_seq_length - 2:
             tokens_a = tokens_a[:(max_seq_length - 2)]
@@ -156,7 +156,7 @@ class Dataset(torch.utils.data.Dataset):
         self.features = features
         self.num_relations = num_relations
         self.max_length = max_seq_len
-        self.k = k
+        self.k = k  # TODO 0903 干嘛用的
 
     def __getitem__(self, index):
 
